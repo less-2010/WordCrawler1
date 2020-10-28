@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.19">
+    <root id="1">
+      <ServerVersion>5.0.96</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="hyb1"/>
+    <schema id="3" parent="1" name="hyb2"/>
+    <schema id="4" parent="1" name="hyb3"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="jsp"/>
+    <schema id="7" parent="1" name="mldn"/>
+    <schema id="8" parent="1" name="mydata"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="test">
+      <Current>1</Current>
+    </schema>
+    <table id="11" parent="10" name="goddess"/>
+    <table id="12" parent="10" name="info"/>
+    <table id="13" parent="10" name="login"/>
+    <table id="14" parent="10" name="words"/>
+    <column id="15" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="16" parent="11" name="user_name">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="11" name="sex">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="18" parent="11" name="age">
+      <Position>4</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="19" parent="11" name="birthday">
+      <Position>5</Position>
+      <DataType>DATE(10)|91s</DataType>
+    </column>
+    <column id="20" parent="11" name="email">
+      <Position>6</Position>
+      <DataType>VARCHAR(30)|12s</DataType>
+    </column>
+    <column id="21" parent="11" name="mobile">
+      <Position>7</Position>
+      <DataType>VARCHAR(11)|12s</DataType>
+    </column>
+    <column id="22" parent="11" name="create_user">
+      <Position>8</Position>
+      <DataType>VARCHAR(30)|12s</DataType>
+    </column>
+    <column id="23" parent="11" name="create_date">
+      <Position>9</Position>
+      <DataType>DATE(10)|91s</DataType>
+    </column>
+    <column id="24" parent="11" name="update_user">
+      <Position>10</Position>
+      <DataType>VARCHAR(30)|12s</DataType>
+    </column>
+    <column id="25" parent="11" name="update_date">
+      <Position>11</Position>
+      <DataType>DATE(10)|91s</DataType>
+    </column>
+    <column id="26" parent="11" name="isdel">
+      <Position>12</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <index id="27" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="28" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="30" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="12" name="personId">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="32" parent="12" name="sex">
+      <Position>4</Position>
+      <DataType>CHAR(10)|1s</DataType>
+    </column>
+    <column id="33" parent="12" name="hobby">
+      <Position>5</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="34" parent="12" name="birthday">
+      <Position>6</Position>
+      <DataType>DATE(10)|91s</DataType>
+    </column>
+    <index id="35" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="36" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="13" name="name">
+      <Position>1</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="38" parent="13" name="pwd">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="39" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="40" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="14" name="Word">
+      <Position>1</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="14" name="Chinese">
+      <Position>2</Position>
+      <DataType>VARCHAR(80)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="43" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Word</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Word</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
